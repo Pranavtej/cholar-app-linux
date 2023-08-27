@@ -1,0 +1,62 @@
+{
+  "name": "Cholar",
+  "productName": "Cholar",
+  "version": "1.0.0",
+  "description": "CHOLAR short for CHaracterization Of LncRNA from rAw Reads).",
+  "main": "src/main.js",
+  "scripts": {
+    "start": "electron-forge start",
+    "package": "electron-forge package",
+    "make": "electron-forge make",
+    "publish": "electron-forge publish",
+    "lint": "echo \"No linting configured\""
+  },
+  "keywords": [],
+  "author": "Pranav Teja",
+  "license": "MIT",
+  "config": {
+    "forge": {
+      "packagerConfig": {},
+      "makers": [
+        {
+          "name": "@electron-forge/maker-squirrel",
+          "config": {
+            "name": "tron_forge"
+          }
+        },
+        {
+          "name": "@electron-forge/maker-zip",
+          "platforms": [
+            "darwin"
+          ]
+        },
+        {
+          "name": "@electron-forge/maker-deb",
+          "config": {}
+        },
+        {
+          "name": "@electron-forge/maker-rpm",
+          "config": {}
+        }
+      ]
+    }
+  },
+  "dependencies": {
+    "child_process": "^1.0.2",
+    "curlrequest": "^1.0.1",
+    "electron-dev": "^1.0.1",
+    "electron-is-dev": "^2.0.0",
+    "electron-squirrel-startup": "^1.0.0",
+    "node-wget": "^0.4.3",
+    "sudo-prompt": "^9.2.1"
+  },
+  "devDependencies": {
+    "@electron-forge/cli": "^6.0.0-beta.50",
+    "@electron-forge/maker-deb": "^6.0.0-beta.50",
+    "@electron-forge/maker-rpm": "^6.0.0-beta.50",
+    "@electron-forge/maker-squirrel": "^6.0.0-beta.50",
+    "@electron-forge/maker-zip": "^6.0.0-beta.50",
+    "devtron": "^1.4.0",
+    "electron": "8.0.2"
+  }
+}
