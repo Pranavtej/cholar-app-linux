@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<!-- Coding By CodingNepal - codingnepalweb.com -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!----======== CSS ======== -->
+    <link rel="stylesheet" href="styles.css">
+     
+    <!----===== Iconscout CSS ===== -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+
+   <title>Choloar v 1.0 </title>
+</head>
+<body>
+    <div class="container">
+        <header>Cholar</header>     
+            <div class="first">
+                <div class="details personal">
+                    <span class="title">Fastq files</span>
+           <form>
+                    <div class="fields">
+                        <div class="input-field">
+                            <label>Upload fasttq files </label>
+                            <!-- <input type="text" placeholder="Enter your name" required> -->
+                            <button id="file-upload">Upload</button>
+                            <p id="selected-files"></p>
+
+                        </div>
+
+                        <div class="input-field">
+                            <label>Threads</label>
+                            <input type="number" id="threads" placeholder="Enter required Threads" required>
+                            <p id="msg"><p>
+                        </div>
+                </div>        
+                    <div class="fields">
+                        <div class="input-field">
+                            <label>Splice set files </label>
+                            <!-- <input type="text" placeholder="Enter your name" required> -->
+                            <button id="splice-upload">Upload</button>
+
+                        </div>
+
+                        <div class="input-field">
+                            <label>Selcted files</label>
+                            <p id="selected-splice-files"></p>
+                            <!-- <input type="number" id="threads" placeholder="Enter required Threads" required> -->
+
+                        </div>
+                        </div>
+                        <div class="fields">
+                            <div class="input-field">
+                                <label>REF File</label>
+                                <!-- <input type="text" placeholder="Enter your name" required> -->
+                                <button id="ref-upload">Upload</button>
+                             
+    
+                            </div>
+    
+                            <div class="input-field">
+                                <label>Selcted files</label>
+                                <p id="selected-reference-file"></p>
+                                <!-- <input type="number" id="threads" placeholder="Enter required Threads" required> -->
+                                <!--  -->
+                            </div>
+                            </div>
+                            <div class="fields">
+                                <div class="input-field">
+                                    <label>Annotation File</label>
+                                    <!-- <input type="text" placeholder="Enter your name" required> -->
+                                    <button id="annotation-upload">Upload</button>
+                                 
+        
+                                </div>
+        
+                                <div class="input-field">
+                                    <label class="input-label">Selcted files</label>
+                                    <p id="selected-annotation-file"></p>
+                                    <!-- <input type="number" id="threads" placeholder="Enter required Threads" required> -->
+                                    <!--  -->
+                                </div>
+                                </div>
+                                <!-- <button  id="run">
+                                    <span class="btnText">Run</span>
+                                    <i class="uil uil-navigator"></i>
+                                </button> -->
+
+             
+            </div>
+        </form>
+        </div>
+            <div class="run-button">
+                <button id="run">
+                    <span id="run_msg" class="btnText">Run</span>
+                    <i class="uil uil-navigator"></i>
+                </button>
+            </div>
+            
+    
+    </div>
+
+    <script src="script.js"></script>
+    
+<script type="module" src="renderer.js"></script>
+</body>
+</html>

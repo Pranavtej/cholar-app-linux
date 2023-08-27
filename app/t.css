@@ -1,0 +1,144 @@
+/* Global styles */
+
+/* Font */
+body {
+    font-family: 'Open Sans', sans-serif;
+  }
+  
+  /* Upload button */
+  #upload, 
+  #splice-upload,
+  #ref-upload,
+  #annotation-upload {
+    background-color: #007bff;
+    border: none;
+    color: #fff;
+    padding: 12px 24px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  #upload:hover,
+  #splice-upload:hover,  
+  #ref-upload:hover,
+  #annotation-upload:hover {
+    background: #0062cc;
+  }
+  
+  /* Uploaded files text */  
+  #selected-files,
+  #selected-splice-files,
+  #selected-reference-file, 
+  #selected-annotation-file {
+    font-size: 14px; 
+  }
+  
+  .container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  }
+  
+  h1, h2 {
+    text-align: center; 
+  }
+  
+  /* Form styles */
+  
+  .form {
+    display: flex;  
+    flex-direction: column;
+  }
+  
+  .form-field {
+    margin: 10px 0;
+  }
+  
+  label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    display: block;
+  }
+  
+  input, 
+  button {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  } 
+  
+  button {
+    background: #007bff;
+    color: #fff;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background: #0062cc;
+  }
+  
+  /* Uploaded files */
+  
+  #selected-files,
+  #selected-splice-files, 
+  #selected-reference-file,
+  #selected-annotation-file {
+    margin: 5px 0;
+    padding: 5px;
+    background: #eee;
+    border-radius: 4px;
+  }
+  
+  /* Form navigation */
+  
+  .form-navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .previous, 
+  .next {
+    padding: 8px 16px;
+    background: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .previous:hover,
+  .next:hover {
+    background: #0062cc;
+  }
+  /* Center run button */
+.run-button {
+    display: flex;
+    justify-content: center;
+  }
+  
+  /* Style run button */
+  #run {
+    padding: 12px 24px; 
+    font-size: 18px;
+    font-weight: bold;
+    background: #28a745; 
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    transition: background 0.3s ease;
+  }
+  
+  #run:hover {
+    background: #218838;
+  }
+  
+  #run .btnText {
+    margin-right: 8px; 
+  }
