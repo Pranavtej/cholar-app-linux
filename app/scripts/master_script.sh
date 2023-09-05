@@ -65,7 +65,7 @@ cd $in_dir
 d1=$in_dir/raw_fastqc_report
 if [[ ! -d "$d1" ]]
 then
-        mkdir raw_fastqc_report
+        mkdir $in_dir/raw_fastqc_report
 fi
 
 # run fastqc on all fastq or fastq.gz files
@@ -98,21 +98,21 @@ rm *unpaired.fastq*
 d2=$in_dir/Paired
 if [[ ! -d "$d2" ]]
 then
-        mkdir Paired 
+        mkdir $in_dir/Paired 
         mv *paired.fastq* Paired/        
 fi
 
 d3=$in_dir/raw_fastq
 if [[ ! -d "$d3" ]]
 then
-        mkdir raw_fastq
-        mv *.fastq* raw_fastq/
+        mkdir $in_dir/raw_fastq
+        mv *.fastq* $in_dir/raw_fastq/
 fi
 
 d4=$in_dir/trim_summary
 if [[ ! -d "$d4" ]]
 then
-        mkdir trim_summary
+        mkdir $in_dir/trim_summary
         mv *SummaryFile.txt trim_summary
 fi
 
@@ -211,7 +211,7 @@ cpat.py -x $scr_dir/files/Human_Hexamer_hg38.tsv --antisense \
 -o coding_potential_output
 
 # run htseq count
-mkdir htseq_files
+mkdir $in_dir/htseq_files
 
 for i in *rmPCRdup.bam
 do
